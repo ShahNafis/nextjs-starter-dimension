@@ -1,5 +1,4 @@
 import Head from "next/head"
-import stylesheet from 'styles/main.scss'
 
 import Header from "../components/Header"
 import Main from "../components/Main"
@@ -72,13 +71,6 @@ class IndexPage extends React.Component {
         return (
             <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? "is-article-visible" : ""}`}>
                 <div>
-                    <Head>
-                        <title>Next.js Starter</title>
-                        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
-                    </Head>
-
-                    <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-
                     <div id="wrapper">
                         <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
                         <Main
@@ -90,7 +82,6 @@ class IndexPage extends React.Component {
                         />
                         <Footer timeout={this.state.timeout} />
                     </div>
-
                     <div id="bg" />
                 </div>
             </div>
@@ -99,3 +90,5 @@ class IndexPage extends React.Component {
 }
 
 export default IndexPage
+
+
