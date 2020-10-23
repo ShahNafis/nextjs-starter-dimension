@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import DetailsIcon from '@material-ui/icons/Details';
-
+import { faGem } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Header = (props) => (
     <header id="header" style={props.timeout ? {display: 'none'} : {}}>
         <div className="logo">
             {/*<span className="icon fa-diamond"></span>*/}
-            <DetailsIcon />
+            <FontAwesomeIcon className="icon" transform="grow-18" icon={faGem}/>
         </div>
         <div className="content">
             <div className="inner">

@@ -1,4 +1,4 @@
-import stylesheet from 'styles/main.scss'
+import stylesheet from '../styles/main.scss'
 import Head from "next/head"
 
 function MyApp({ Component, pageProps }) {
